@@ -1,0 +1,55 @@
+<html>
+<div class="container">
+  <img class="mySlides" src="../../../assets/banner.jpg" alt="custom_html_banner1" style="width:100%; height:200px;object-fit: fill">
+  <div class="bottom-left">Agrupamento 10 Cedofeita</div>
+  <!--<div class="top-left">Top Left</div>
+  <div class="top-right">Top Right</div>
+  <div class="bottom-right">Bottom Right</div>
+  <div class="centered">Centered</div>-->
+</div>
+<ul>
+  <!-- http://agr740areosa.org/ -->
+  <li><a href="home">Início</a></li>
+  <li class="dropdown">
+    <a href="agrupamento">Agrupamento</a>
+    <div class="dropdown-content">
+      <a href="agrupamento/historia">História</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="seccoes">Secções</a>
+    <div class="dropdown-content">
+      <a href="seccoes/lobitos">Lobitos</a>
+      <a href="seccoes/exploradores">Exploradores</a>
+      <a href="seccoes/pioneiros">Pioneiros</a>
+      <a href="seccoes/caminheiros">Caminheiros</a>
+    </div>
+  </li>
+  <li><a href="documentos">Documentos</a></li>
+  <li><a href="eventos">Eventos</a></li>
+  <li><a href="galeria">Galeria</a></li>
+  <li><a href="contactos">Contactos</a></li>
+</ul>
+
+
+
+
+<!--end .sidebar-blog div-->
+<table>
+  <tr>
+    <th class="column left">
+      <router-outlet></router-outlet>
+    </th>
+    <th class="column right"> <img src="../../../assets/ze-rodrigo.jpg" alt="custom_html_banner1" style="width:100%; height:200px;object-fit: fill">
+    </th>
+  </tr>
+</table>
+
+<footer>
+  <a target="_blank" href="https://www.escutismo.pt/">Agrupamento 10 Cedofeita</a> &copy; 2019.
+  <span class="float-right">Powered by
+    <a target="_blank" href="http://angular.io">Angular</a>
+  </span>
+</footer>
+
+</html>
