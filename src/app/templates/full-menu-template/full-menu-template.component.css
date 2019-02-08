@@ -53,13 +53,6 @@ li.dropdown {
   display: block;
 }
 
-#sidebar {
-  float: right;
-  width: 30%;
-  height: 100%;
-  border-style: solid;
-}
-
 .container {
   position: relative;
   text-align: center;
@@ -71,7 +64,8 @@ li.dropdown {
   position: absolute;
   bottom: 8px;
   left: 16px;
-  font-size: 50px;
+  text-align: left;
+  font-size: 300%;
 }
 
 /* Top left text */
@@ -105,6 +99,9 @@ li.dropdown {
 
 .left {
   width: 75%;
+  vertical-align: top;
+  text-align: left;
+  padding-left: 1%;
 }
 
 .right {
@@ -112,18 +109,30 @@ li.dropdown {
   vertical-align: top;
 }
 
-.row {
-  display: table;
-  width: 100%;
-}
-
-table, th, td {
+table, td {
   border: 1px solid ;
   border-spacing: 0px;
 }
 
 @media screen and (max-width: 600px) {
-  .column {
+  .left {
     width: 100%;
+    vertical-align: top;
+    text-align: left;
+    padding-left: 1%;
   }
+
+  .right {
+    width: 0%;
+    display: none;
+  }
+
+  .bottom-left {
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    text-align: left;
+    font-size: 200%;
+  }
+
 }

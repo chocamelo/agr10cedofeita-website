@@ -2,6 +2,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { DashboardModule } from './home/dashboard.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FullCalendarModule } from 'ng-fullcalendar';
 
 import { AppComponent } from './app.component';
 import { NotFoundComponent } from './not-found/not-found.component';
@@ -40,7 +41,8 @@ import { ContactosComponent } from './contactos/contactos.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DashboardModule
+    DashboardModule,
+    FullCalendarModule
     ],
   providers: [],
   bootstrap: [AppComponent]

@@ -11,5 +11,4 @@ export class DocumentosComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }
