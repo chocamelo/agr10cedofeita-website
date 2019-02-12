@@ -31,19 +31,26 @@
   <li><a href="contactos">Contactos</a></li>
 </ul>
 
-
-
-
-<!--end .sidebar-blog div-->
-<table>
-  <tr>
-    <td class="column left">
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
       <router-outlet></router-outlet>
-    </td>
-    <td class="column right"> <img src="../../../assets/ze-rodrigo.jpg" style="width:100%; height:200px;object-fit: contain">
-    </td>
-  </tr>
-</table>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h3>Escuteiro do Mês</h3>
+      <img src="../../../assets/ze-rodrigo.jpg" style="width:100%; height: 200px ;object-fit: cover">
+      <p>O Zé Rodrigo é o pioneiro mais fixe que a comunidade tem, e todos devemos apreciar a sua presença.</p>
+    </div>
+    <div class="card">
+      <h3>Atividades</h3>
+      <img src="../../../assets/pass1.jpg" style="width:100%; height:100px;object-fit:cover">
+      <img src="../../../assets/pass2.jpg" style="width:100%; height:100px;object-fit:cover">
+      <img src="../../../assets/pass4.jpg" style="width:100%; height:100px;object-fit:cover">
+    </div>
+  </div>
+</div>
 
 <footer>
   <a target="_blank" href="https://www.escutismo.pt/">Agrupamento 10 Cedofeita</a> &copy; 2019.
