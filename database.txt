@@ -1,0 +1,36 @@
+//Scout of Month
+{
+  "name":"Name Of Scout",
+  "pic":"base64 buffer",
+  "description":"The description goes here",
+  "date":Date.now()
+}
+
+//Eventos
+{
+  "start": Date.now(),
+  "end": Date.now(),
+  "title": "title goes here",
+  "allDay": true
+}
+
+//Noticias
+{
+  "title":"Title goes here",
+  "author":"Author name",
+  "date": Date.now(),
+  "pic":"base64 buffer",
+  "textbody":"Body of text goes here",
+  "scope":"scope" //seccçoes, geral
+}
+
+//Album fotos
+{
+  "title":"Album Title",
+  "scope":"scope",
+  "photos":[
+    {
+      "pic":"base64 buffer"
+    }
+  ]
+}

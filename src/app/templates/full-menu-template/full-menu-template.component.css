@@ -28,13 +28,18 @@ li.dropdown {
   display: inline-block;
 }
 
+.resp-button {
+  visibility: hidden;
+  display: none;
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 900;
 }
 
 .dropdown-content a {
@@ -46,7 +51,7 @@ li.dropdown {
 }
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1
+  background-color: #f1f1f1;
 }
 
 .dropdown:hover .dropdown-content {
@@ -103,12 +108,12 @@ body {
 
 /* Add a card effect for articles */
 .card {
-   background-color: #eeeeee;
-   padding: 10px;
-   margin-top: 5px;
+  background-color: #eeeeee;
+  padding: 10px;
+  margin-top: 5px;
 }
 
-h1{
+h1 {
   color: red;
 }
 
@@ -120,9 +125,24 @@ h1{
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {
+@media screen and (max-width: 600px) {
+
+  .leftcolumn,
+  .rightcolumn {
     width: 100%;
     padding: 0;
   }
+
+  /*.dropdown-content {
+    display: none;
+    visibility: hidden;
+  }*/
+}
+
+.activity:hover {
+  transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -o-transform: scale(1.01);
 }
