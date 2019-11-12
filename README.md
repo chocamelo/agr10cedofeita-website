@@ -1,3 +1,21 @@
+# To Do List
+
+## Website
+
+* Galeria de fotos
+* Ver Fotos em cada album
+* Secção de Notícias
+* Estetica dos Documentos
+* Eventos
+
+## Servidor
+
+
+## Outros
+
+* Ligar servidor ao website
+* Base de dados
+
 # AngularWebsite
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.0.

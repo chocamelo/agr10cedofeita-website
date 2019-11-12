@@ -1,7 +1,8 @@
 /* Add a card effect for articles */
 .card {
-   background-color: #e1e1e1;
+   background-color: rgb(197, 255, 197);
    padding: 10px;
+   border-radius: 25px;
 }
 
 body {

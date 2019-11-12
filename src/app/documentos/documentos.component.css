@@ -1,0 +1,12 @@
+.card {
+    background-color: #e1e1e1;
+    padding: 10px;
+ }
+
+h5 {
+    padding-left:2em
+}
+
+ul, ol{
+    padding-left:4em
+}

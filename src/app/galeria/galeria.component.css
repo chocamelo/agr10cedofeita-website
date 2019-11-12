@@ -1,0 +1,41 @@
+td {
+  text-align: center;
+}
+
+div:hover{
+  background-color:rgb(199, 199, 199);
+}
+
+img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+@media screen and (max-width: 600px) {
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  td {
+    display: block;
+    text-align: center;
+  }
+}
+
+.secc{
+  max-width: 50%;
+  max-height: 50%;
+}
+.secc:hover {
+  transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}

@@ -3,11 +3,13 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: rgb(87, 163, 0);
+  border-radius: 25px;
 }
 
 li {
   float: left;
+  border-right: solid 2px rgb(197, 255, 197);
 }
 
 li a,
@@ -21,7 +23,7 @@ li a,
 
 li a:hover,
 .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: rgb(200, 255, 0);
 }
 
 li.dropdown {
@@ -36,7 +38,7 @@ li.dropdown {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: rgb(197, 255, 197);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 900;
@@ -51,7 +53,7 @@ li.dropdown {
 }
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
+  background-color: rgb(200, 255, 0);
 }
 
 .dropdown:hover .dropdown-content {
@@ -62,6 +64,7 @@ li.dropdown {
   position: relative;
   text-align: center;
   color: white;
+  border-radius: 25px;
 }
 
 /* Bottom left text */
@@ -82,6 +85,7 @@ body {
   font-family: Arial;
   padding: 20px;
   background: #f1f1f1;
+  border-radius: 25px;
 }
 
 /* Header/Blog Title */
@@ -111,10 +115,12 @@ body {
   background-color: #eeeeee;
   padding: 10px;
   margin-top: 5px;
+  border-radius: 25px;
 }
 
 h1 {
   color: red;
+  border-radius: 25px;
 }
 
 /* Clear floats after the columns */
@@ -122,6 +128,11 @@ h1 {
   content: "";
   display: table;
   clear: both;
+}
+
+.icon {
+  display: none;
+  visibility: hidden;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
@@ -132,11 +143,37 @@ h1 {
     width: 100%;
     padding: 0;
   }
+}
 
-  /*.dropdown-content {
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 830px) {
+  .dropdown-content {
     display: none;
     visibility: hidden;
-  }*/
+  }
+
+  li {
+    visibility: hidden;
+    display: none;
+    width: 0%;
+  }
+
+  ul {
+    display: table;
+    width: 100%;
+  }
+
+
+  li.icon {
+    display: table-cell;
+    visibility: visible;
+    width: 100%;
+  }
+
+  a {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .activity:hover {
