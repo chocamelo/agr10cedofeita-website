@@ -5,8 +5,9 @@
 }
 
 body {
-  background-color: rgb(100, 255, 100);
-  color: rgb(36, 36, 36);
+  /*background-color: rgb(100, 255, 100);
+  color: rgb(36, 36, 36);*/
+  background: 'assets/grass.jpeg'
 }
 
 html {
