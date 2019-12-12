@@ -1,19 +1,19 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { CalendarComponent } from 'ng-fullcalendar';
-import { Options } from 'fullcalendar';
+// import { Options } from 'fullcalendar';
 
 @Component({
   selector: 'app-eventos',
   templateUrl: './eventos.component.html',
-  styleUrls: ['./eventos.component.css']
+  styleUrls: ['./eventos.component.css', '../styles/cardcontent.css']
 })
 export class EventosComponent implements OnInit {
-  calendarOptions: Options;
+  /*calendarOptions: Options;
  displayEvent: any;
-  @ViewChild(CalendarComponent) ucCalendar: CalendarComponent;
+  @ViewChild(CalendarComponent) ucCalendar: CalendarComponent;*/
 
   ngOnInit() {
-     this.calendarOptions = {
+     /*this.calendarOptions = {
         editable: false,
         eventLimit: false,
         header: {
@@ -22,10 +22,10 @@ export class EventosComponent implements OnInit {
           right: 'month,agendaWeek,agendaDay,listMonth'
         },
         events: null
-      };
+      };*/
   }
 
-  clickButton(model: any) {
+  /*clickButton(model: any) {
     this.displayEvent = model;
   }
   eventClick(model: any) {
@@ -56,5 +56,5 @@ export class EventosComponent implements OnInit {
       }
     };
     this.displayEvent = model;
-  }
+  }*/
 }

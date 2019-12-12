@@ -2,7 +2,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { DashboardModule } from './home/dashboard.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FullCalendarModule } from 'ng-fullcalendar';
+//import { FullCalendarModule } from 'ng-fullcalendar';
 import { AgmCoreModule } from '@agm/core';
 import {Angular2ImageGalleryModule} from 'angular2-image-gallery';
 
@@ -50,7 +50,7 @@ import { AlbumComponent } from './galeria/album/album.component';
     BrowserModule,
     AppRoutingModule,
     DashboardModule,
-    FullCalendarModule,
+    //FullCalendarModule,
     BrowserAnimationsModule,
     Angular2ImageGalleryModule,
     AgmCoreModule.forRoot({

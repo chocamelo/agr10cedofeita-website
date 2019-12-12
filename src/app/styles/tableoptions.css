@@ -1,0 +1,43 @@
+table,
+td {
+  text-align: center;
+}
+
+table {
+    width:100%;
+}
+
+.card {
+    background-color: rgb(200, 200, 200);
+    padding: 10px;
+    border-radius: 20px;
+    display: inline-block;
+  }
+
+img {
+  max-width: 262px;
+  border-radius: 20px;
+  max-height: 264%;
+}
+
+@media screen and (max-width: 1000px) {
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  td {
+    display: block;
+    text-align: center;
+  }
+}
+
+.card:hover {
+  transform: scale(1.05);
+}

@@ -4,7 +4,7 @@ import { DOCUMENT } from '@angular/common';
 @Component({
   selector: 'app-album',
   templateUrl: './album.component.html',
-  styleUrls: ['./album.component.css']
+  styleUrls: ['./album.component.css', '../../styles/cardcontent.css']
 })
 export class AlbumComponent implements OnInit {
 

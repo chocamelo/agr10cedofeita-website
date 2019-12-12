@@ -3,7 +3,7 @@ import { Component, OnInit, HostListener } from '@angular/core';
 @Component({
   selector: 'app-full-menu-template',
   templateUrl: './full-menu-template.component.html',
-  styleUrls: ['./full-menu-template.component.css']
+  styleUrls: ['./full-menu-template.component.css', './navbar.css', '../../styles/cardcontent.css']
 })
 export class FullMenuTemplateComponent implements OnInit {
 
