@@ -1,11 +1,13 @@
-<div class="cardcontent">
-    <h2>Lobitos!</h2>
-    <h5>by João Camelo, Fev 12, 2019</h5>
-    <hr>
-    <p>Some text..</p>
-    <img style="display: block; margin-left: auto; margin-right: auto; width: 50%;" 
-    alt="Angular Logo" 
-    src="../../../assets/lobitos_progresso.png">
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  <div *ngFor="let post of posts;let i = index;">
+    <p *ngIf="i!=0"></p>
+    <div class="cardcontent">
+      <h2>{{post.title}}</h2>
+      <h5>por {{post.author}}, {{post.date}}</h5>
+      <hr>
+      <div *ngFor="let body of post.body">
+        <p>{{body.text}}</p>
+        <img ng-if="body.image" style="display: block; margin-left: auto; margin-right: auto; width: 50%;" alt="Angular Logo"
+        src="{{body.image}}">
+      </div>
+    </div>
   </div>

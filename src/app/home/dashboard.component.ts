@@ -7,6 +7,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
+  public posts: any[] = [
+    {
+      title: 'Title',
+      author: 'João',
+      date: 'Fevereiro',
+      body: [
+        {
+          text: 'text here',
+          image: '../assets/13336202_1204008246285474_1238944268_n.jpg'
+        }
+      ]
+    },
+    {
+      title: 'Title',
+      author: 'João',
+      date: 'Fevereiro',
+      body: [
+        {
+          text: 'text here',
+          image: '../assets/13336202_1204008246285474_1238944268_n.jpg'
+        }
+      ]
+    }
+  ];
   constructor() { }
 
   ngOnInit() {

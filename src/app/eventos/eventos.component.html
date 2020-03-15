@@ -6,18 +6,38 @@
     <h2>Eventos e Proximas Datas</h2>
     <hr>
     <p></p>
-    <h5>Dezembro</h5>
-    <ul>
-        <li><b>14 de Dezembro</b> - Ultima reunião dos Lobitos em 2019!</li>
-    </ul>
+    <div *ngFor="let month of calendar">
+        <h5>{{month.name}}</h5>
+        <table>
+            <tr>
+                <th></th>
+                <th>Lobitos</th>
+                <th>Exploradores</th>
+                <th>Pioneiros</th>
+                <th>Camineiros</th>
+            </tr>
+            <tr *ngFor="let event of month.events">
+                <td><li style="text-align: left; padding-inline-start: 20px;"><b>{{event.day}} de {{month.name}}</b> - {{event.description}}</li></td>
+                <td><span *ngIf="event.lobitos" class="dot lobitos"></span></td>
+                <td><span *ngIf="event.exploradores" class="dot exploradores"></span></td>
+                <td><span *ngIf="event.pioneiros" class="dot pioneiros"></span></td>
+                <td><span *ngIf="event.caminheiros" class="dot caminheiros"></span></td>
+            </tr>
+            </table>
+            <p></p>
+    </div>
+    <hr>
 
-    <h5>Janeiro</h5>
-    <ul>
-        <li><b>4 de Janeiro</b> - Conga e EnCargos</li>
-        <p></p>
-        <li><b>11/12 de Janeiro</b> - Atividade dos Lobitos</li>
-        <p></p>
-        <p></p>
-        <li><b>O mês todo</b> - Cantar as Janeiras!</li>
-    </ul>
+    <p></p>
+    <div *ngFor="let month of calendar">
+        <h5>{{month.name}}</h5>
+        <ul *ngFor="let event of month.events">
+            <li><b>{{event.day}} de {{month.name}} </b> - {{event.description}} &nbsp;
+                <span *ngIf="event.lobitos" class="dot lobitos"></span> &nbsp;
+                <span *ngIf="event.exploradores" class="dot exploradores"></span>&nbsp;
+                <span *ngIf="event.pioneiros" class="dot pioneiros"></span>&nbsp;
+                <span *ngIf="event.caminheiros" class="dot caminheiros"></span>
+            </li>
+        </ul>
+    </div>
 </div>

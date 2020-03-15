@@ -1,0 +1,35 @@
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    text-align:center;
+}
+
+.dot {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.lobitos {
+  background-color: yellow;
+}
+
+.exploradores {
+  background-color: green;
+}
+
+.pioneiros {
+  background-color: blue;
+}
+
+.caminheiros {
+  background-color: red;
+}
+
+.agrupamento {
+  background-color: darkgreen;
+}

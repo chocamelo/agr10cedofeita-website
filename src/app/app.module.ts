@@ -4,7 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 //import { FullCalendarModule } from 'ng-fullcalendar';
 import { AgmCoreModule } from '@agm/core';
-import {Angular2ImageGalleryModule} from 'angular2-image-gallery';
+import { Angular2ImageGalleryModule } from 'angular2-image-gallery';
+//import { CommonModule } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { NotFoundComponent } from './not-found/not-found.component';
@@ -21,8 +22,8 @@ import { DocumentosComponent } from './documentos/documentos.component';
 import { EventosComponent } from './eventos/eventos.component';
 import { GaleriaComponent } from './galeria/galeria.component';
 import { ContactosComponent } from './contactos/contactos.component';
-import {MatSidenavModule} from '@angular/material/sidenav';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AlbumComponent } from './galeria/album/album.component';
 
 
@@ -50,7 +51,8 @@ import { AlbumComponent } from './galeria/album/album.component';
     BrowserModule,
     AppRoutingModule,
     DashboardModule,
-    //FullCalendarModule,
+    // CommonModule,
+    // FullCalendarModule,
     BrowserAnimationsModule,
     Angular2ImageGalleryModule,
     AgmCoreModule.forRoot({

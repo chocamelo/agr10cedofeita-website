@@ -11,7 +11,50 @@ export class EventosComponent implements OnInit {
   /*calendarOptions: Options;
  displayEvent: any;
   @ViewChild(CalendarComponent) ucCalendar: CalendarComponent;*/
-
+  public calendar: any[] = [
+    {
+      name: 'Dezembro',
+      events: [
+        {
+          day: '14',
+          description: 'Ultima reunião do ano!',
+          lobitos: true,
+          exploradores: false,
+          pioneiros: false,
+          caminheiros: false
+        }
+      ]
+    },
+    {
+      name: 'Janeiro',
+      events: [
+        {
+          day: '4',
+          description: 'Conga e Encargos',
+          lobitos: true,
+          exploradores: true,
+          pioneiros: true,
+          caminheiros: true
+        },
+        {
+          day: '11 a 12',
+          description: 'Acantonamento dos Lobitos!',
+          lobitos: true,
+          exploradores: false,
+          pioneiros: false,
+          caminheiros: false
+        },
+        {
+          day: 'O mês todo',
+          description: 'Janeiras!',
+          lobitos: true,
+          exploradores: true,
+          pioneiros: true,
+          caminheiros: true
+        }
+      ]
+    }
+  ];
   ngOnInit() {
      /*this.calendarOptions = {
         editable: false,
