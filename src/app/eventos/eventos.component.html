@@ -6,11 +6,11 @@
     <h2>Eventos e Proximas Datas</h2>
     <hr>
     <p></p>
-    <div *ngFor="let month of calendar">
-        <h5>{{month.name}}</h5>
-        <table>
+    <div class = "eventTable" *ngFor="let month of calendar">
+        <h5 style="margin-bottom: 0px;">{{month.name}}</h5>
+        <table style="width: 100%">
             <tr>
-                <th></th>
+                <th style="width: 50%"></th>
                 <th>Lobitos</th>
                 <th>Exploradores</th>
                 <th>Pioneiros</th>
@@ -24,12 +24,8 @@
                 <td><span *ngIf="event.caminheiros" class="dot caminheiros"></span></td>
             </tr>
             </table>
-            <p></p>
     </div>
-    <hr>
-
-    <p></p>
-    <div *ngFor="let month of calendar">
+    <div class ="eventList" *ngFor="let month of calendar">
         <h5>{{month.name}}</h5>
         <ul *ngFor="let event of month.events">
             <li><b>{{event.day}} de {{month.name}} </b> - {{event.description}} &nbsp;
