@@ -30,7 +30,6 @@ export class FullMenuTemplateComponent implements OnInit {
   }
 
   showMenu() {
-    console.log(this.scrWidth);
     if (this.scrWidth < 830) {
       let str: string;
       if (this.menu) {

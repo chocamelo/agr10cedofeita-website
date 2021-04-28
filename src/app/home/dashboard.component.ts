@@ -1,39 +1,19 @@
-import { Component, OnInit } from '@angular/core';
-
+import { BackendService } from './../backend/backend.service';
+import { DOCUMENT } from '@angular/common';
+import { Component, ElementRef, Inject, OnInit, ViewChild } from '@angular/core';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css', '../styles/cardcontent.css']
 })
 export class DashboardComponent implements OnInit {
+  public posts: any[];
 
-  public posts: any[] = [
-    {
-      title: 'Title',
-      author: 'João',
-      date: 'Fevereiro',
-      body: [
-        {
-          text: 'text here',
-          image: '../assets/13336202_1204008246285474_1238944268_n.jpg'
-        }
-      ]
-    },
-    {
-      title: 'Title',
-      author: 'João',
-      date: 'Fevereiro',
-      body: [
-        {
-          text: 'text here',
-          image: '../assets/13336202_1204008246285474_1238944268_n.jpg'
-        }
-      ]
-    }
-  ];
-  constructor() { }
-
+  constructor(@Inject(DOCUMENT) private document: Document, private backend: BackendService) {
+    this.posts = this.backend.getPosts('agrupamento');
+  }
   ngOnInit() {
   }
+
 
 }

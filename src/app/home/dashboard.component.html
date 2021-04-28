@@ -4,10 +4,6 @@
     <h2>{{post.title}}</h2>
     <h5>por {{post.author}}, {{post.date}}</h5>
     <hr>
-    <div *ngFor="let body of post.body">
-      <p>{{body.text}}</p>
-      <img ng-if="body.image" style="display: block; margin-left: auto; margin-right: auto; width: 50%;" alt="Angular Logo"
-      src="{{body.image}}">
-    </div>
+    <div [innerHtml]="post.body"></div>
   </div>
 </div>

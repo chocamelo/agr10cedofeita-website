@@ -1,4 +1,5 @@
 import { AlbumComponent } from './galeria/album/album.component';
+import { BackofficeComponent } from './backoffice/backoffice.component';
 import { DocumentosComponent } from './documentos/documentos.component';
 import { EventosComponent } from './eventos/eventos.component';
 import { ContactosComponent } from './contactos/contactos.component';
@@ -37,6 +38,7 @@ export const routes: Routes = [{
     { path: 'seccoes/caminheiros', component: CaminheirosComponent },
     { path: 'documentos', component: DocumentosComponent },
     { path: 'eventos', component: EventosComponent },
+    { path: 'backoffice', component: BackofficeComponent },
     {
       path: 'galeria', children: [
         { path: '', component: GaleriaComponent },

@@ -9,6 +9,7 @@ import { Angular2ImageGalleryModule } from 'angular2-image-gallery';
 
 import { AppComponent } from './app.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { BackofficeComponent } from './backoffice/backoffice.component';
 import { LobitosComponent } from './seccoes/lobitos/lobitos.component';
 import { ExploradoresComponent } from './seccoes/exploradores/exploradores.component';
 import { PioneirosComponent } from './seccoes/pioneiros/pioneiros.component';
@@ -35,6 +36,7 @@ import { AlbumComponent } from './galeria/album/album.component';
     ExploradoresComponent,
     PioneirosComponent,
     CaminheirosComponent,
+    BackofficeComponent,
     FullMenuTemplateComponent,
     EmptyTemplateComponent,
     SeccoesComponent,

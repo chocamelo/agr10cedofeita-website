@@ -12,11 +12,17 @@ import { DOCUMENT } from '@angular/common';
 export class AlbumComponent implements OnInit {
 
   albumName: string;
+  IMAGES: Array<string>;
 
   constructor(@Inject(DOCUMENT) private document: Document) {
-    console.log(this.document.location.href);
     this.albumName = this.document.location.href.match('(?<=galeria/).*$')[0];
-    console.log(this.albumName);
+    this.IMAGES = [
+      'http://agr10.flickstuff.com/assets/'+this.albumName+'/pass1.jpg',
+      'http://agr10.flickstuff.com/assets/'+this.albumName+'/pass2.jpg',
+      'http://agr10.flickstuff.com/assets/'+this.albumName+'/pass3.jpg',
+      'http://agr10.flickstuff.com/assets/'+this.albumName+'/pass4.jpg',
+      'http://agr10.flickstuff.com/assets/'+this.albumName+'/pass5.jpg'
+    ];
   }
 
   ngOnInit() {

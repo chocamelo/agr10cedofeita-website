@@ -2,6 +2,7 @@
     <h2>{{albumName}}</h2>
     <hr>
     <p></p>
-    <gallery [galleryName]=albumName [flexBorderSize]="20" [flexImageSize]="20" [maxRowsPerPage]="100">
-    </gallery>
+    <div class="album">
+        <img *ngFor="let pic of IMAGES" class="albumpic" src="{{pic}}"/>
+    </div>  
 </div>
