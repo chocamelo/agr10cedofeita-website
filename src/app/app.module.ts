@@ -1,6 +1,7 @@
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardModule } from './home/dashboard.module';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 //import { FullCalendarModule } from 'ng-fullcalendar';
 import { AgmCoreModule } from '@agm/core';
@@ -26,6 +27,7 @@ import { ContactosComponent } from './contactos/contactos.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AlbumComponent } from './galeria/album/album.component';
+import { SocialComponent } from './social/social.component';
 
 
 @NgModule({
@@ -46,11 +48,13 @@ import { AlbumComponent } from './galeria/album/album.component';
     EventosComponent,
     GaleriaComponent,
     ContactosComponent,
-    AlbumComponent
+    AlbumComponent,
+    SocialComponent
     ],
   imports: [
     MatSidenavModule,
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     DashboardModule,
     // CommonModule,

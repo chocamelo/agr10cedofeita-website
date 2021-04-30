@@ -10,7 +10,7 @@ export class DashboardComponent implements OnInit {
   public posts: any[];
 
   constructor(@Inject(DOCUMENT) private document: Document, private backend: BackendService) {
-    this.posts = this.backend.getPosts('agrupamento');
+    this.posts = this.backend.getPostsGeral();
   }
   ngOnInit() {
   }

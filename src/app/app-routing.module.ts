@@ -7,6 +7,7 @@ import { CaminheirosComponent } from './seccoes/caminheiros/caminheiros.componen
 import { PioneirosComponent } from './seccoes/pioneiros/pioneiros.component';
 import { ExploradoresComponent } from './seccoes/exploradores/exploradores.component';
 import { LobitosComponent } from './seccoes/lobitos/lobitos.component';
+import { SocialComponent } from './social/social.component';
 import { SeccoesComponent } from './seccoes/seccoes.component';
 import { HistoriaComponent } from './agrupamento/historia/historia.component';
 import { AgrupamentoComponent } from './agrupamento/agrupamento.component';
@@ -38,6 +39,7 @@ export const routes: Routes = [{
     { path: 'seccoes/caminheiros', component: CaminheirosComponent },
     { path: 'documentos', component: DocumentosComponent },
     { path: 'eventos', component: EventosComponent },
+    { path: 'social', component: SocialComponent },
     { path: 'backoffice', component: BackofficeComponent },
     {
       path: 'galeria', children: [
