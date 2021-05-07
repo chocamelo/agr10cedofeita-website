@@ -11,6 +11,7 @@ export class DashboardComponent implements OnInit {
 
   constructor(@Inject(DOCUMENT) private document: Document, private backend: BackendService) {
     this.posts = this.backend.getPostsGeral();
+    console.log(this.posts);
   }
   ngOnInit() {
   }

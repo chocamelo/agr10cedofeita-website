@@ -9,7 +9,9 @@ import { BackendService } from './../../backend/backend.service';
 export class PioneirosComponent implements OnInit {
   public posts: any[];
   constructor(private backend: BackendService) {
-    this.posts = this.backend.getPostsPioneiros();
+    this.posts = this.backend.getPostsPioneiros().subscribe( res => {
+      this.posts = res;
+    }, err => { console.log(err) } );
   }
 
   ngOnInit() {
