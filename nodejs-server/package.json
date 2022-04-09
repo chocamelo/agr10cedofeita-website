@@ -7,7 +7,7 @@
     "cors": "^2.8.5",
     "express": "^4.16.4",
     "jsonwebtoken": "^8.4.0",
-    "moment": "^2.23.0",
+    "moment": "^2.29.2",
     "mongoose": "^4.4.2",
     "mongoose-id-validator": "^0.5.0",
     "morgan": "^1.9.1",
